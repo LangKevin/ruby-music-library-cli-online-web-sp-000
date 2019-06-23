@@ -97,6 +97,7 @@ class MusicLibraryController
     while userInput != "exit"
       intro_message
       userInput = gets.chomp
+      handle_message(userInput)
     end
 
   end
