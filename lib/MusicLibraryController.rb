@@ -16,7 +16,7 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
   end
-  def list_songs(arg = nil)
+  def list_songs
 # "1. Thundercat - For Love I Come - dance"
     idx = 1
     Song.all.sort_by{ |obj| obj.name }.each do |item|
@@ -75,7 +75,7 @@ class MusicLibraryController
   end
 
   def handle_message(input)
-    if input == "list songs"
+    if input == 'list songs'
       list_songs
     elsif input == 'list artists'
       list_artists
