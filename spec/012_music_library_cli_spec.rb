@@ -5,7 +5,7 @@ describe "MusicLibraryController - CLI Commands" do
 
   describe "'list songs'" do
     it "triggers #list_songs" do
-      allow(music_library_controller).to receive(:gets).and_return("list songs", "exit")
+      allow(music_library_controller).to receive(:gets).and_return("list_songs", "exit")
 
       expect(music_library_controller).to receive(:list_songs)
 
