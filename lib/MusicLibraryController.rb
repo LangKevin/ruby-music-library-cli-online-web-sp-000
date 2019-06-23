@@ -23,7 +23,7 @@ class MusicLibraryController
       puts "#{idx}. #{item.artist.name} - #{item.name} - #{item.genre.name}"
       idx = idx + 1
     end
-
+    return "exit"
   end
   def list_artists
 # "1. Action Bronson")
