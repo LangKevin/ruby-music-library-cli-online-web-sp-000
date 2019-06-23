@@ -4,7 +4,7 @@ class MusicLibraryController
   def initialize(path="./db/mp3s")
     @path = path
     @musicImporter = MusicImporter.new(@path)
-    musicImporter.import
+    @musicImporter.import
   end
   def intro_message
     puts "To list all of your songs, enter 'list songs'."
@@ -23,7 +23,7 @@ class MusicLibraryController
       puts "#{idx}. #{item.artist.name} - #{item.name} - #{item.genre.name}"
       idx = idx + 1
     end
-  
+
   end
   def list_artists
 # "1. Action Bronson")
