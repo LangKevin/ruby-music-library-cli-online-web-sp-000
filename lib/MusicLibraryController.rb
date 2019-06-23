@@ -86,6 +86,8 @@ class MusicLibraryController
       list_songs_by_genre
     elsif input == 'play song'
       play_song
+    else
+      "exit"
     end
   end
 
