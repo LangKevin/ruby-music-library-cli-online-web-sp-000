@@ -16,7 +16,7 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
   end
-  def list_songs
+  def list_songs(arg = nil)
 # "1. Thundercat - For Love I Come - dance"
     idx = 1
     Song.all.sort_by{ |obj| obj.name }.each do |item|
